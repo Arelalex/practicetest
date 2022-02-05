@@ -17,10 +17,10 @@ String num = "8123456789";
     @Test
     void practiceFormTestPositive() {
         open("https://demoqa.com/automation-practice-form");
-        $("#firstName").val(name);
+        $("#firstName").val(name); // css селектор
         $("#lastName").val(lastName); //UTF-8
         $(" #userEmail").val(email);
-        $x("//label[text()='" + gender + "']").click();
+        $x("//label[text()='" + gender + "']").click(); // xpath
         $("#userNumber").val(num);
         $("#dateOfBirthInput").click();
         $x("//select[contains(@class, 'month')]").click();
